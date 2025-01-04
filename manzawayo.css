@@ -1,0 +1,125 @@
+/* Gallery Layout for Attractions */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Adjusted for smaller images */
+  gap: 10px;
+  justify-content: center; /* Center the content */
+}
+
+/* Gallery Images */
+.gallery img {
+  width: 100px; /* Set a smaller specific width for images */
+  height: 100px; /* Set a height for the images */
+  object-fit: cover; /* Ensure images cover the area without distorting */
+  border-radius: 5px;
+}
+
+/* Base Styles */
+body {
+  background-color: #d3d3d3; /* Light gray background */
+  color: #0a0a0a; /* Black text */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header with Background Image */
+header {
+  background: url('manzawayo.jpeg.jpg') no-repeat center center;
+  background-size: cover;
+  color: #e0d2d2; /* Darker gray for headings */
+  text-align: center;
+  padding: 60px 10px 10px 10px; /* Adjust padding for spacing */
+  position: relative;
+  height: 300px; /* Set the height for the header */
+}
+
+/* Subheading Style */
+header h2 {
+  color: #777777; /* Slightly lighter gray for the subheading */
+  margin-top: 10px;
+  position: absolute;
+  top: 10px;
+  width: 10%;
+  text-align: center;
+}
+
+/* Navigation */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  background-color: #333;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+}
+
+nav ul li a:hover {
+  background-color: #575757;
+}
+
+/* Containers */
+.container {
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 1200px;
+}
+
+/* Sections */
+section {
+  margin: 20px 0;
+}
+
+/* Links */
+a {
+  color: #0000ee;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Sidebar Buttons */
+.sidebar-buttons {
+  position: fixed;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+.sidebar-buttons a {
+  display: block;
+  margin: 10px 0;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.sidebar-buttons a:hover {
+  background-color: #575757;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
