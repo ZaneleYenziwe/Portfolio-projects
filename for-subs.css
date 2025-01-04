@@ -1,0 +1,100 @@
+/* General Page Styling */
+body {
+  background-color: #d3d3d3; /* Light gray background */
+  color: #0a0a0a; /* Black text */
+  font-family: Arial, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  background-color: #333;
+}
+
+header nav ul li {
+  margin: 0;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+}
+
+header nav ul li a:hover {
+  background-color: #575757;
+}
+
+/* Header and Background Styling */
+header {
+  text-align: center;
+  padding: 60px 10px 10px 10px; /* Adjust padding for spacing */
+  color: #e0d2d2; /* Darker gray for headings */
+  position: relative;
+  height: 300px; /* Set the height for the header */
+}
+
+header h1 {
+  position: relative;
+  z-index: 2; /* Ensure the title is on top of the background image */
+}
+
+/* Specific Background Images for Each Subheading Page */
+.attractions-header {
+  background: url('attractions_bg.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.events-header {
+  background: url('events_bg.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.blog-header {
+  background: url('blog_bg.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.contact-header {
+  background: url('contact_bg.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+section {
+  margin: 20px 0;
+  padding: 20px;
+}
+
+/* Event Articles */
+section h2, article h3 {
+  color: #333;
+}
+
+article {
+  background: #fff;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+article h3 {
+  margin: 0;
+  padding: 0 0 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
